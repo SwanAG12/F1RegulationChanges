@@ -1,2 +1,9 @@
 # F1RegulationChanges
-Two-way fixed-effects model separating driver skill from car performance in Formula One qualifying, 2018–2026, with relative team changes at the 2022 and 2026 regulation changes. Notebook downloads data via FastF1; no raw timing data included.
+
+Two-way fixed effects model distinguishing driver skill and car performance in Formula One Qualifying. Relative team change after regulation changes at 2022 and 2026.
+
+## Reproduction
+
+Timing data is not included in this repository. To reproduce this analysis, execute the F1RegulationChanges.ipynb notebook from top to bottom. FastF1 will fetch the data from Formula One's timing service and store it on your machine in the data/ folder. This will not be included in the repository. ff1_cache/ is also not included in the repository. On first execution this will take a while.
+
+All the tables and figures in this paper (7 figures) will be produced including the wild cluster bootstrap p-values (6c.1).
